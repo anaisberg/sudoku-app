@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: blippo;
+    src: url(blippo.ttf);
+  }
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -13,8 +18,8 @@ button:focus {
 body {
     display: grid;
     grid-template-rows: 150px 1fr;
-    background-color: #ff5252;
-    font-family: 'Dosis', sans-serif;
+    background-color: #fe5e78;
+    font-family: 'blippo', sans-serif;
 }
 
 header {
@@ -41,17 +46,17 @@ header {
 .btn {
     display: inline-block;
     border-radius: 6px;
-    background-color: whitesmoke;
+    background-color: #ffd486;
     border: none;
-    color: black;
+    color: whitesmoke;
     text-align: center;
     font-size: 16px;
     padding: 10px;
     width: 230px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 0px 0px 25px 0px;
-    font-family: 'Dosis', sans-serif;
+    margin: 10px 0px 10px 0px;
+    font-family: 'blippo', sans-serif;
     font-weight: bold;
 }
 
@@ -83,21 +88,22 @@ header {
 .sudoku-grid {
     display: table;
     background: white;
-    border: 3px solid black;
+    border: 3px solid #25b6c3;
+    margin-top: 10px;
 }
 
     .sudoku-grid > div:nth-child(3), .sudoku-grid > div:nth-child(6) {
-        border-bottom: 3px solid black;
+        border-bottom: 3px solid #25b6c3;
     }
 
     .grid-row > div:nth-child(3), .grid-row > div:nth-child(6) {
-        border-right: 3px solid black;
+        border-right: 3px solid #25b6c3;
     }
 
 .grid-cell {
     display: table-cell;
     padding: 10px;
-    border: 1px solid gray;
+    border: 1px solid #25b6c3;
 }
 
 .grid-cell-editor {
@@ -123,7 +129,7 @@ header {
 }
 
 .answer-image {
-    border: 2px solid black;
+    border: 2px solid #25b6c3;
     width: 300px;
     height: 300px;
 }
